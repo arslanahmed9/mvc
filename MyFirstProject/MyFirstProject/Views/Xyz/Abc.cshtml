@@ -1,0 +1,17 @@
+﻿@Model MyFirstProject.ViewModels.Course_Students
+
+@{
+    ViewBag.Title = "Abc";
+}
+
+<h2>this is the abc.cshtml page under views xyz folder</h2>
+<br />
+@*<h2>student: @Model.firstname @Model.lastname </h2> for single student*@
+
+<h2>course title: @Model.course.coursename </h2>
+
+@foreach (var item in Model.students) 
+{
+    <h2>student: @item.firstname @item.lastname </h2>
+}
+
